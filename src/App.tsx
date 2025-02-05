@@ -1,5 +1,4 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 import Earth from "./Earth";
 import Spaceship from "./Spaceship";

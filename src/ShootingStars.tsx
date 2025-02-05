@@ -6,7 +6,7 @@ const ShootingStars = () => {
   const starRefs = useRef<THREE.Mesh[]>([]);
 
   useFrame(() => {
-    starRefs.current.forEach((star, i) => {
+    starRefs.current.forEach((star) => {
       if (!star) return;
 
       // Cast material to MeshBasicMaterial to access opacity
