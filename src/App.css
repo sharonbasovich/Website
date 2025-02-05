@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px; /* Adjust size if needed */
+  letter-spacing: 2px; /* Helps match the pixelated look */
+  text-transform: uppercase; /* Optional for a consistent style */
+  -webkit-font-smoothing: none; /* Disables anti-aliasing for a sharper look */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: "flex";
+  justifyContent: "center";
+  alignItems: "center";
+  position: relative;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+.overlay {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  
+  text-align: center;
+  color: white;
+}
+
+.links a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color:#F5006C;
+}
