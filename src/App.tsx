@@ -5,7 +5,6 @@ import Spaceship from "./Spaceship";
 import Stars from "./Stars";
 import "./App.css";
 import { motion } from "motion/react";
-import { OrbitControls } from "@react-three/drei";
 
 const App = () => {
   const icon = {
