@@ -5,6 +5,7 @@ import Spaceship from "./Spaceship";
 import Stars from "./Stars";
 import "./App.css";
 import { motion } from "motion/react";
+import { OrbitControls } from "@react-three/drei";
 
 const App = () => {
   const icon = {
@@ -28,7 +29,7 @@ const App = () => {
 
           {/* Rotating Earth & Spaceship */}
           <Earth />
-          <Spaceship />
+          <Spaceship initialRotation={[1, 1, 1]} />
 
           {/* Controls */}
         </Suspense>
@@ -44,10 +45,13 @@ const App = () => {
         <h1>Sharon</h1>
         <h1>Basovich</h1>
         <div className="links">
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/sharonbasovich/" target="_blank">
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sharon-basovich/"
+            target="_blank"
+          >
             LinkedIn
           </a>
         </div>
